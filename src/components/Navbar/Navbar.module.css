@@ -1,0 +1,35 @@
+.mainLogo,.mainLogo:link, .mainLogo:visited, .mainLogo:active {
+  text-decoration: none;
+  color:#FF8787;
+  font-size:2.2em;
+  padding: .5em;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+.mainLogo:hover{
+  color: #E26868;
+}
+.mainNavbar{
+  margin: 0;
+  padding:1em;
+  padding-bottom: 2em;
+  background-color: #EDEDED;
+  display:flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+.navList {
+  text-decoration: none;
+  list-style: none;
+  display:flex;
+}
+.navLinks, .navLinks:visited, .navLinks:active{
+  text-decoration: none;
+  padding:0 2em;
+  font-size: 1.5em;
+  color:#5F9DF7;
+  font-family: 'Caveat';
+}
+.navLinks:hover {
+  color:#89b2ef;
+}
