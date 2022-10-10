@@ -1,0 +1,35 @@
+.testCard{
+  width:20em;
+  background-color: lightblue;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  box-sizing: border-box;
+}
+.textCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.iconImgs{
+  width: 2em;
+  height: 2em;
+}
+
+.divider{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.iconContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icons{
+  padding:.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
