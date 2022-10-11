@@ -1,0 +1,11 @@
+.questionContainer{
+  text-align: center;
+  margin: 1em;
+}
+.questionContainer h1 {
+  margin: 1em;
+}
+
+.questionOption{
+  margin: 1em;
+}
