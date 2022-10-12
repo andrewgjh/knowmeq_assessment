@@ -23,3 +23,26 @@ u {
 .agree {
   background-color: lightblue;
 }
+
+/* .correct-check{
+  background: url('./assets/images/accept.png') no-repeat left top;
+  background-size: 1.5em 1.5em;
+  padding-left: 2.5em;
+  font-size: 1em;
+  color:green;
+} */
+.wrong-answer{
+  background: url('./assets/images/cancel.png') no-repeat left top;
+  background-size: 1.5em 1.5em;
+  padding-left: 2.5em;
+  font-size: 1em;
+  color: red;
+}
+
+.neutral-answer{
+  background: url('./assets/images/remove.png') no-repeat left top;
+    background-size: 1.5em 1.5em;
+    padding-left: 2.5em;
+    font-size: 1em;
+  
+}

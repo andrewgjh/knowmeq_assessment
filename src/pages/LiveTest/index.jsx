@@ -16,7 +16,7 @@ const LiveTest = () => {
   const [answers, setAnswers] = useState(
     JSON.parse(localStorage.getItem(`answers-${id}`)) || []
   );
-  // const [submitReady, setSubmitReady] = useState(false);
+
   const [open, confirmSubmit, PopUpConfirm] = useSubmit();
 
   const nextQuestion = () => setCurrentQuestion(prev => prev + 1);

@@ -26,9 +26,9 @@
 .navLinks, .navLinks:visited, .navLinks:active{
   text-decoration: none;
   padding:0 2em;
-  font-size: 1.5em;
+  font-size: 1.6em;
   color:#5F9DF7;
-  font-family: 'Caveat';
+  font-family: 'Amiri', sans-serif;
 }
 .navLinks:hover {
   color:#89b2ef;

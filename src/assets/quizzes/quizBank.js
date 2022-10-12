@@ -93,7 +93,7 @@ const quizBank = {
         options: [
           "To make the code shorter.",
           "None. Functions should not be used while rendering a dynamic list.",
-          "If we need to computer a value based on the properties of items in the loop.",
+          "If we need to compute a value based on the properties of items in the loop.",
           "All of the above can apply at different times.",
         ],
         correct_answer_idx: 2,
@@ -130,7 +130,7 @@ const quizBank = {
       {
         id: "1c233248-b2ae-4cc2-8998-d04afbe74738",
         question: "What is output for 'raining'.find('z') ?",
-        options: ["Type error", "", "-1", "Not found"],
+        options: ["Type error", '""', "-1", "Not found"],
         correct_answer_idx: 2,
       },
       {

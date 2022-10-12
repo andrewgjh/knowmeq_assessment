@@ -11,11 +11,11 @@ export const quizCorrection = testID => {
       correctAnswers++;
     }
   });
-
+  const percentage = Math.round((correctAnswers / answerArray.length) * 100);
   return {
     correctAnswers,
-    percentage: correctAnswers / answerArray.length,
-    correctAnswerArray,
+    percentage,
+    answerArray,
   };
 };
 
