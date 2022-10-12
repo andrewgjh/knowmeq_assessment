@@ -21,10 +21,8 @@ export const quizCorrection = testID => {
 
 export const quizAllAnswered = testID => {
   const answerArray = JSON.parse(localStorage.getItem(`answers-${testID}`));
-  let allAnswered = true;
-  for (let index = 0; index < quizBank[testID].questions.length; index++) {
-    const answer = answerArray?.[index];
-    if (!answer) allAnswered = false;
-  }
-  return allAnswered;
+  return (
+    quizBank[testID].questions.length ===
+    answerArray.filter(x => !isNaN(x)).length
+  );
 };

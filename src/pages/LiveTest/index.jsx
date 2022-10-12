@@ -6,6 +6,7 @@ import CountdownTimer from "../../components/CountdownTimer";
 import { isTimeOver } from "../../util/timerUtils";
 import { useNavigate } from "react-router-dom";
 import { quizAllAnswered } from "../../util/quizUtils";
+import useSubmit from "../../hooks/useSubmit";
 
 const LiveTest = () => {
   const navigate = useNavigate();
@@ -15,20 +16,25 @@ const LiveTest = () => {
   const [answers, setAnswers] = useState(
     JSON.parse(localStorage.getItem(`answers-${id}`)) || []
   );
-  const [submitReady, setSubmitReady] = useState(false);
+  // const [submitReady, setSubmitReady] = useState(false);
+  const [open, confirmSubmit, PopUpConfirm] = useSubmit();
 
   const nextQuestion = () => setCurrentQuestion(prev => prev + 1);
   const prevQuestion = () => setCurrentQuestion(prev => prev - 1);
-  const submitQuiz = () => {
+
+  const submit = () => {
+    localStorage.removeItem(`timer-${id}`);
+    navigate(`/results/${id}`);
+  };
+
+  const confirmThenSubmit = async () => {
     if (!quizAllAnswered(id)) {
-      
-    } else {
-      setSubmitReady(true);
+      const agree = await confirmSubmit(
+        "There are unanswered questions, are you sure you want to submit?"
+      );
+      if (!agree) return;
     }
-    if (submitReady) {
-      localStorage.removeItem(`timer-${id}`);
-      navigate("/results");
-    }
+    submit();
   };
 
   const saveChoice = e => {
@@ -46,6 +52,7 @@ const LiveTest = () => {
       <CountdownTimer
         expireTimeMS={JSON.parse(localStorage.getItem(`timer-${id}`))}
       />
+      {open && <PopUpConfirm />}
       <fieldset disabled={isTimeOver(id)}>
         <legend>{questions[currentQuestion].question}</legend>
         {questions[currentQuestion].options.map((option, idx) => (
@@ -70,7 +77,7 @@ const LiveTest = () => {
           </button>
         )}
       </div>
-      <button className={styles.submitButton} onClick={submitQuiz}>
+      <button className={styles.submitButton} onClick={confirmThenSubmit}>
         Submit
       </button>
     </div>

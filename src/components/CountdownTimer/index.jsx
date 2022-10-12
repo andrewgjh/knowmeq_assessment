@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { calcRemainingTime } from "../../util/timerUtils";
 
-const CountdownTimer = ({ expireTimeMS }) => {
+const CountdownTimer = ({ expireTimeMS, submitFunc }) => {
   const [timeRemaining, setTimeRemaining] = useState({
     hours: "00",
     minutes: "00",

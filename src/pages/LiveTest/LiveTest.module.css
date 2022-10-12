@@ -1,14 +1,37 @@
 .questionContainer{
   text-align: center;
   margin: 1em;
+  position: relative;
 }
 .questionContainer h1 {
   margin: 1em;
 }
 
 .questionOption{
-  margin: 1em;
+  margin: 1.2em;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
+.questionOption label{
+  margin: .2em;
+}
+.questionContainer input[type=radio] {
+  
+  border: 0px;
+  width: 1.8em;
+  height: 1.8em;
+  background-color:red;
+}
+
+.questionContainer fieldset {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
 
 .questionContainer button {
   padding: 5px 15px;
