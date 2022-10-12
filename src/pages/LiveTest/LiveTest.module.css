@@ -9,3 +9,32 @@
 .questionOption{
   margin: 1em;
 }
+
+.questionContainer button {
+  padding: 5px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  border: none;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.questionContainer button:hover {
+  opacity: 60%;
+}
+.questionContainer button:active {
+  opacity: 90%;
+}
+
+.nextButton {
+  background-color: rgb(238, 118, 118);
+}
+
+.submitButton{
+  display: block;
+  margin: 1em auto !important;
+  background-color: lightblue;
+}

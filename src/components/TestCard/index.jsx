@@ -4,6 +4,14 @@ import styles from "./TestCard.module.css";
 import { Link } from "react-router-dom";
 
 const TestCard = ({ testTitle, timeLimit, description, level, testID }) => {
+  const startTimer = () => {
+    if (!localStorage.getItem(`timer-${testID}`)) {
+      localStorage.setItem(
+        `timer-${testID}`,
+        JSON.stringify(Date.now() + timeLimit * 60000)
+      );
+    }
+  };
   return (
     <article className={styles.testCard}>
       <div>
@@ -33,7 +41,11 @@ const TestCard = ({ testTitle, timeLimit, description, level, testID }) => {
         </aside>
         <hr className={styles.divider} />
         <button>
-          <Link className={styles.buttonLink} to={`/test/${testID}`}>
+          <Link
+            className={styles.buttonLink}
+            to={`/test/${testID}`}
+            onClick={startTimer}
+          >
             Take Test
           </Link>
         </button>
