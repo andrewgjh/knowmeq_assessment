@@ -1,5 +1,18 @@
 # TestChimp - KnowMeQ Assessment Website
 
+The website is currently hosted on [AWS](http://testchimp-reactapp.s3-website.us-east-2.amazonaws.com/).
+
+## **Functionality of Website**
+
+- static landing page / about me page / pricing page
+- See all tests
+- Take a test.
+- Tests are timed and cannot be changed after timer runs out.
+- Answers/Timer are both saved between browser refresh/closes.
+- Upon Submission, Results are tabulated with a correction sheet of right answers.
+
+## Screenshots of the Website
+
 ![Screenshot-LandingPage](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-LandingPage.png)
 ![Screenshot-aboutus](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20AboutUsPage.png)
 ![Screenshot-allQuizzes](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20All%20Quizzes.png)
