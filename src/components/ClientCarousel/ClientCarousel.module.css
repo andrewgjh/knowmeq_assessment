@@ -1,0 +1,19 @@
+.sectionHeader{
+  text-align: center;
+  padding: 1em;
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+}
+.arrowSlider {
+  width:2.5em;
+  height:2.5em;
+  margin: 1em
+}
+.slider{
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

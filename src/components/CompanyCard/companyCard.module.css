@@ -1,10 +1,10 @@
 .imgContainer{
   padding:1em;
   border-radius: 20px;
-  background-color: rgb(246, 239, 227);
   display: inline-block;
 }
 .companyImg{
   width:10em;
   height:10em;
+  border-radius: 10px;
 }
