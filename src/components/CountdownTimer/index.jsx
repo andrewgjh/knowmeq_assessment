@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { calcRemainingTime } from "../../util/timerUtils";
+import styles from "./CountdownTimer.module.css";
 
-const CountdownTimer = ({ expireTimeMS, submitFunc }) => {
+const CountdownTimer = ({ expireTimeMS }) => {
   const [timeRemaining, setTimeRemaining] = useState({
     hours: "00",
     minutes: "00",
@@ -22,7 +23,8 @@ const CountdownTimer = ({ expireTimeMS, submitFunc }) => {
   };
 
   return (
-    <div>
+    <div className={styles.timerContainer}>
+      <div className={styles.blinds}></div>
       <span>{timeRemaining.hours}</span>:<span>{timeRemaining.minutes}</span>:
       <span>{timeRemaining.seconds}</span>
     </div>
