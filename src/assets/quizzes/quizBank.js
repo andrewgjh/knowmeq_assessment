@@ -19,6 +19,30 @@ const quizBank = {
         correct_answer_idx: 0,
       },
       {
+        id: "b166569f-522d-4024-b4ce-8e5f1dbb7d2d",
+        question:
+          "What of the following is used in React.js to increase performance?",
+        options: [
+          "Original DOM",
+          "Virtual DOM",
+          "Both A and B.",
+          "None of the Above",
+        ],
+        correct_answer_idx: 1,
+      },
+      {
+        id: "a108def2-e76a-45ad-99b6-432d00cded32",
+        question:
+          "What is the declarative way to render a dynamic list of components based on values in an array?",
+        options: [
+          "Using the reduce array method",
+          "Using the <Each /> component",
+          "Using the Array.map() method",
+          "With a for/while loop",
+        ],
+        correct_answer_idx: 2,
+      },
+      {
         id: "0e0e3d4d-509f-4dbb-83db-127cbb28fa8f",
         question:
           "Which of the following command is used to create react-js-app?",
@@ -173,6 +197,19 @@ const quizBank = {
           'Component.pack("Left-side")',
         ],
         correct_answer_idx: 2,
+      },
+      {
+        id: "88453c0b-7caf-49db-8f7b-4b9faefbe65d",
+        question:
+          "Which function in python is used to accept input from the user?",
+        options: ["input()", "raw_input()", "rawinput()", "string()"],
+        correct_answer_idx: 0,
+      },
+      {
+        id: "88453c0b-7caf-49db-8f7b-4b9faefbe65d",
+        question: "What is this type of variable `x = -5j`?",
+        options: ["int", "complex", "real", "imaginary"],
+        correct_answer_idx: 1,
       },
     ],
   },

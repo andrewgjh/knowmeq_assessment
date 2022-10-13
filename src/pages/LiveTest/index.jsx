@@ -38,9 +38,14 @@ const LiveTest = () => {
   };
 
   const saveChoice = e => {
+    let choiceID = e.target.value;
+    if (isNaN(choiceID)) {
+      const idArr = e.target.id.split("-");
+      choiceID = idArr[idArr.length - 1];
+    }
     setAnswers(prev => {
       let choice = [...prev];
-      choice[currentQuestion] = parseInt(e.target.value);
+      choice[currentQuestion] = parseInt(choiceID);
       localStorage.setItem(`answers-${id}`, JSON.stringify(choice));
       return choice;
     });
@@ -56,7 +61,14 @@ const LiveTest = () => {
       <fieldset disabled={isTimeOver(id)}>
         <legend>{questions[currentQuestion].question}</legend>
         {questions[currentQuestion].options.map((option, idx) => (
-          <div key={option} className={styles.questionOption}>
+          <div
+            id={`${questions[currentQuestion].id}-${idx}`}
+            key={option}
+            onClick={saveChoice}
+            className={`${styles.questionOption} ${
+              answers[currentQuestion] === idx ? styles.selected : ""
+            }`}
+          >
             <input
               type="radio"
               id={idx}
@@ -65,7 +77,7 @@ const LiveTest = () => {
               checked={answers[currentQuestion] === idx}
               onChange={saveChoice}
             />
-            <label htmlFor={option}>{option}</label>
+            <label htmlFor={idx}> {option}</label>
           </div>
         ))}
       </fieldset>
