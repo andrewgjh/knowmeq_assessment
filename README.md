@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# TestChimp - KnowMeQ Assessment Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot-LandingPage](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-LandingPage.png)
+![Screenshot-aboutus](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20AboutUsPage.png)
+![Screenshot-allQuizzes](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20All%20Quizzes.png)
+![Screenshot-QuizQuestion](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20QuizQuestion.png)
+![Screenshot-ConfirmToSubmit](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20ConfirmToSubmit.png)
+![Screenshot-ResultPage](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-ResultsPage.png)
 
 ## Available Scripts
 
