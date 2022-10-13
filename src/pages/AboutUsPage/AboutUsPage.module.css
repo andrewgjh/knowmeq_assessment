@@ -1,0 +1,16 @@
+.content{
+  display: flex;
+  justify-content: space-around;
+
+}
+.content p {
+  line-height: 1.6;
+}
+.aboutUsHeader{
+  text-align: center;
+  margin: 1em;
+  font-size: 2em;
+}
+.sectionAboutContainer{
+  margin: 10em 5em;
+}
