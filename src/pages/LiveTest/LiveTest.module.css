@@ -31,7 +31,6 @@
   margin: .2em;
 }
 .questionContainer input[type=radio] {
-  display: none;
   border: 0px;
   width: 1.8em;
   height: 1.8em;
@@ -75,4 +74,8 @@
   display: block;
   margin: 1em auto !important;
   background-color: lightblue;
+}
+.greyOut{
+  background-color: rgb(238, 118, 118);
+  opacity: 70%;
 }

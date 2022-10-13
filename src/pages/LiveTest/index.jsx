@@ -38,6 +38,7 @@ const LiveTest = () => {
   };
 
   const saveChoice = e => {
+    if (isTimeOver(id)) return;
     let choiceID = e.target.value;
     if (isNaN(choiceID)) {
       const idArr = e.target.id.split("-");
@@ -56,9 +57,14 @@ const LiveTest = () => {
       <h1>{quizBank[id].quiz_name}</h1>
       <CountdownTimer
         expireTimeMS={JSON.parse(localStorage.getItem(`timer-${id}`))}
+        submitFunc={submit}
+        testID={id}
       />
       {open && <PopUpConfirm />}
-      <fieldset disabled={isTimeOver(id)}>
+      <fieldset
+        disabled={isTimeOver(id)}
+        className={isTimeOver(id) ? styles.greyOut : ""}
+      >
         <legend>{questions[currentQuestion].question}</legend>
         {questions[currentQuestion].options.map((option, idx) => (
           <div

@@ -2,5 +2,19 @@
   font-size: 3em;
   width:50%;
   text-align: center;
-  margin: 2.5em auto;
+  margin: 4em auto;
+  background-color: rgb(243, 238, 184);
+  transform: rotate(-2deg);
+  transition: all .2s;
+  position: relative;
+}
+.mainHeader:hover {
+  transform: rotate(0deg);
+}
+
+.monkey{
+  width: 2em;
+  position:absolute;
+  left: 0;
+  bottom: -90px;
 }

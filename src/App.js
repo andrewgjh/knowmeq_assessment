@@ -7,6 +7,7 @@ import PricingPage from "./pages/PricingPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ResultsPage from "./pages/ResultsPage";
 import LiveTest from "./pages/LiveTest";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />}></Route>
         <Route path="/results/:id" element={<ResultsPage />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className={styles.mainNavbar}>
       <h1>
         <Link className={styles.mainLogo} to="/">
-          TestChimpanzee
+          TestChimp
         </Link>
       </h1>
       <div>
