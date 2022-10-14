@@ -15,6 +15,7 @@ The website is currently hosted on [AWS](http://testchimp-reactapp.s3-website.us
 
 ![Screenshot-LandingPage](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-LandingPage.png)
 ![Screenshot-aboutus](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20AboutUsPage.png)
+![Screenshot-PricingPage](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20PricingPage.png)
 ![Screenshot-allQuizzes](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20All%20Quizzes.png)
 ![Screenshot-QuizQuestion](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20QuizQuestion.png)
 ![Screenshot-ConfirmToSubmit](https://github.com/andrewgjh/knowmeq_assessment/blob/main/src/assets/images/Screenshot-%20ConfirmToSubmit.png)
