@@ -1,0 +1,5 @@
+.pricingPageContainer{
+  display: flex;
+  margin: 3em;
+  justify-content: space-evenly;
+}
